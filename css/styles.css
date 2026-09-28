@@ -1,0 +1,290 @@
+/* ICT251 Activity 2 - styles for Maxine Muchinda's website */
+
+/* Element selectors */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1f2937;
+    background: linear-gradient(135deg, #e0f2fe 0%, #f0fdf4 50%, #fefce8 100%);
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0 0 0.4rem 0;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #1e3a8a;
+    border-bottom: 3px solid #f59e0b;
+    padding-bottom: 0.35rem;
+}
+
+h3 {
+    color: #334155;
+}
+
+a {
+    color: #1d4ed8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #ffffff;
+    background-color: #1e3a8a;
+    border-radius: 4px;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #94a3b8;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #dbeafe;
+}
+
+tbody tr:hover {
+    background-color: #fef3c7;
+}
+
+/* Header with gradient background */
+header {
+    background: linear-gradient(120deg, #1e3a8a 0%, #1d4ed8 60%, #0ea5e9 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-contact {
+    background-color: rgba(255, 255, 255, 0.15);
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #0f172a;
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: #e2e8f0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #f59e0b;
+    color: #0f172a;
+}
+
+/* Class selector - repeated content sections */
+.content-section {
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    margin: 1.2rem auto;
+    border: 1px solid #94a3b8;
+    border-left: 6px solid #1d4ed8;
+    border-radius: 10px;
+    max-width: 920px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ID selector - unique section */
+#media {
+    background-color: #eff6ff;
+    border: 2px solid #1e3a8a;
+    border-left: 6px solid #f59e0b;
+}
+
+/* Hobbies list */
+.hobby-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hobby-list li {
+    background-color: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    margin: 0.5rem 0;
+}
+
+.hobby-list li:hover {
+    background-color: #fef3c7;
+    border-color: #f59e0b;
+}
+
+/* Photo gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery figure {
+    margin: 0;
+    flex: 1 1 220px;
+    max-width: 260px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.gallery figure:hover {
+    transform: scale(1.03);
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+}
+
+.gallery figcaption {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #475569;
+}
+
+.credit, .media-note, .form-note {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Media section */
+video {
+    display: block;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+audio {
+    display: block;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+/* Contact section */
+.contact-details {
+    background-color: #fef3c7;
+    border: 1px solid #f59e0b;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    max-width: 420px;
+}
+
+.contact-details p {
+    margin: 0.3rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    max-width: 550px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 0.65rem;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #f8fafc;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #f59e0b;
+    background-color: #ffffff;
+}
+
+button {
+    background: linear-gradient(120deg, #1e3a8a, #1d4ed8);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem 1.4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover, button:focus {
+    background: linear-gradient(120deg, #f59e0b, #fbbf24);
+    color: #0f172a;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(120deg, #0f172a, #1e3a8a);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+/* Small screens: keep everything readable with no sideways scrolling */
+@media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+    .content-section { margin: 1rem 0.6rem; padding: 1rem; }
+    nav { flex-direction: column; align-items: stretch; text-align: center; position: static; }
+}
